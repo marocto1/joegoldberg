@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid__wrapper {
+  height: 100vh;
+  /* Градиентный фон, похожий на атмосферу сериала "You" */
+  background: linear-gradient(135deg, #1c1c1c, #2e3a59, #4f5b78);
+}
+
+.grid__wrapper .container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  max-width: 1320px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; /* Белый цвет для текста */
+  background-color: black; /* Черный фон для квадратиков */
+  border-radius: 12px; /* Сглаженные углы */
+  overflow: hidden;
+  position: relative;
+  border: 2px solid black; /* Черная граница */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Тень появляется только при наведении */
+.grid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); /* Кроваво-красная тень при наведении */
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Сглаженные углы для изображения */
+}
+
+.grid1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.grid3 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.grid4 {
+  grid-area: 1 / 6 / 3 / 8;
+}
+
+.grid5 {
+  grid-area: 1 / 8 / 2 / 10;
+}
+
+.grid6 {
+  grid-area: 1 / 10 / 2 / 11;
+}
+
+.grid7 {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.grid8 {
+  grid-area: 2 / 3 / 4 / 4;
+}
+
+.grid9 {
+  grid-area: 2 / 4 / 4 / 6;
+}
+
+.grid10 {
+  grid-area: 3 / 6 / 4 / 8;
+}
+
+.grid11 {
+  grid-area: 2 / 8 / 4 / 9;
+}
+
+.grid12 {
+  grid-area: 2 / 9 / 4 / 11;
+}
+
+.grid13 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.grid14 {
+  grid-area: 4 / 2 / 5 / 4;
+}
+
+.grid15 {
+  grid-area: 4 / 4 / 6 / 6;
+}
+
+.grid16 {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+.grid17 {
+  grid-area: 4 / 7 / 5 / 9;
+}
+
+.grid18 {
+  grid-area: 4 / 9 / 6 / 11;
+}
+
+.grid19 {
+  grid-area: 5 / 1 / 7 / 3;
+}
+
+.grid20 {
+  grid-area: 5 / 3 / 7 / 4;
+}
+
+.grid21 {
+  grid-area: 6 / 4 / 7 / 6;
+}
+
+.grid22 {
+  grid-area: 5 / 6 / 7 / 8;
+}
+
+.grid23 {
+  grid-area: 5 / 8 / 7 / 9;
+}
+
+.grid24 {
+  grid-area: 6 / 9 / 7 / 11;
+  z-index: 1000;
+}
